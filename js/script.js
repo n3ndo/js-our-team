@@ -30,3 +30,9 @@ let dipendenti = [
         image: 'barbara-ramos-graphic-designer.jpg',
     }
 ]
+
+for(let key in dipendenti){
+    console.log(dipendenti[key].nome);
+    console.log(dipendenti[key].ruolo);
+    console.log(dipendenti[key].image);
+}
