@@ -36,3 +36,9 @@ for(let key in dipendenti){
     console.log(dipendenti[key].ruolo);
     console.log(dipendenti[key].image);
 }
+
+let list = document.getElementById('list');
+
+for(let i=0; i<dipendenti.length; i++){
+    list.innerHTML += '<li>' + dipendenti[i].nome + ' - ' + dipendenti[i].ruolo + ' - ' + dipendenti[i].image + '</li>';
+}
